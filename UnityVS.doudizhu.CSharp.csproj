@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D52AEAC-8C93-AF53-A046-8155A5CC662E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>5.1.0f3</UnityVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_1_0;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_1_0;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Libs\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets\Libs\DOTween\DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets\Libs\DOTween\DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets\Libs\DOTween\DOTween50.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Classes\Card\Card.cs" />
+    <Compile Include="Assets\Classes\Card\CardInfo.cs" />
+    <Compile Include="Assets\Classes\ClientSocket\Business\AsyncSocket.cs" />
+    <Compile Include="Assets\Classes\ClientSocket\Business\ISocketResponse.cs" />
+    <Compile Include="Assets\Classes\ClientSocket\Business\ISocketStatus.cs" />
+    <Compile Include="Assets\Classes\ClientSocket\Business\Queue\ReceivedDataStatusQueue.cs" />
+    <Compile Include="Assets\Classes\ClientSocket\Business\Queue\SendDataQueue.cs" />
+    <Compile Include="Assets\Classes\ClientSocket\Foundation\BufferConst.cs" />
+    <Compile Include="Assets\Classes\ClientSocket\Foundation\CClientSocket.cs" />
+    <Compile Include="Assets\Classes\ClientSocket\Foundation\Codec\GenCodec.cs" />
+    <Compile Include="Assets\Classes\ClientSocket\Foundation\IClientSocket.cs" />
+    <Compile Include="Assets\Classes\ClientSocket\Foundation\PackageHeader.cs" />
+    <Compile Include="Assets\Classes\Helper\Const\SpriteNameConst.cs" />
+    <Compile Include="Assets\Classes\Helper\OtherHelper\AppHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\OtherHelper\CanvasHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\OtherHelper\CardHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\OtherHelper\CloneHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\OtherHelper\DeviceInfoHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\OtherHelper\InfoCleanerHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\OtherHelper\LocalStorageHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\OtherHelper\LoginTypeHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\OtherHelper\SceneHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\OtherHelper\SceneNameHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\OtherHelper\VolumeStorageHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\PrefabHelper\AlertViewHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\PrefabHelper\AnimationHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\PrefabHelper\BgMusicHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\PrefabHelper\ButtonHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\PrefabHelper\CardNumberHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\PrefabHelper\CardSpriteHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\PrefabHelper\DelayCallerHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\PrefabHelper\InfoSpriteHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\PrefabHelper\LoadingViewHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\PrefabHelper\SettingViewHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\PrefabHelper\SoundHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\PrefabHelper\TimerHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\PrefabHelper\UserHeadHelper.cs" />
+    <Compile Include="Assets\Classes\Helper\PrefabHelper\WinLoseViewHelper.cs" />
+    <Compile Include="Assets\Classes\Model\ModelManager\ModelManager.cs" />
+    <Compile Include="Assets\Classes\Model\objects\decodeObject\DeskCardsPromptObject.cs" />
+    <Compile Include="Assets\Classes\Model\objects\decodeObject\DeskCardsValidateObject.cs" />
+    <Compile Include="Assets\Classes\Model\objects\decodeObject\DeskChuPaiObject.cs" />
+    <Compile Include="Assets\Classes\Model\objects\decodeObject\DeskJiaoDiZhuObject.cs" />
+    <Compile Include="Assets\Classes\Model\objects\decodeObject\UserCheckResumePlayObject.cs" />
+    <Compile Include="Assets\Classes\Model\objects\decodeObject\UserEditProfileObject.cs" />
+    <Compile Include="Assets\Classes\Model\objects\decodeObject\UserLoginObject.cs" />
+    <Compile Include="Assets\Classes\Model\objects\decodeObject\UserSitOnDeskObject.cs" />
+    <Compile Include="Assets\Classes\Model\objects\normalObject\DeskObject.cs" />
+    <Compile Include="Assets\Classes\Model\objects\normalObject\RoomObject.cs" />
+    <Compile Include="Assets\Classes\Model\objects\normalObject\UserObject.cs" />
+    <Compile Include="Assets\Classes\Model\objects\normalObject\VersionObject.cs" />
+    <Compile Include="Assets\Classes\Model\objects\type\CardArray.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\AutoDeskChuPai\AutoDeskChuPaiController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\AutoDeskChuPai\AutoDeskChuPaiDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\AutoDeskJiaoDiZhu\AutoDeskJiaoDiZhuController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\AutoDeskJiaoDiZhu\AutoDeskJiaoDiZhuDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\ClientStatus\ClientStatusController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\Const\ServerConst.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\Const\SocketConst.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\Const\UIUpdateRefreshConst.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskCardsPrompt\DeskCardsPromptController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskCardsPrompt\DeskCardsPromptDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskCardsPrompt\DeskCardsPromptEncoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskCardsValidate\DeskCardsValidateController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskCardsValidate\DeskCardsValidateDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskChuPai\DeskChuPaiController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskChuPai\DeskChuPaiDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskChuPai\DeskChuPaiEncoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskDaPaiEnd\DeskDaPaiEndController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskDaPaiEnd\DeskDaPaiEndDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskFaDiPai\DeskFaDiPaiController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskFaDiPai\DeskFaDiPaiDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskFaPai\DeskFaPaiController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskFaPai\DeskFaPaiDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskJiaoDiZhu\DeskJiaoDiZhuController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskJiaoDiZhu\DeskJiaoDiZhuDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskJiaoDiZhu\DeskJiaoDiZhuEncoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskJiaoDiZhuFinish\DeskJiaoDiZhuFinishController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskJiaoDiZhuFinish\DeskJiaoDiZhuFinishDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskPromptUserJiaoDiZhu\DeskPromptUserJiaoDiZhuController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\DeskPromptUserJiaoDiZhu\DeskPromptUserJiaoDiZhuDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\OtherClientDisconnected\OtherClientDisconnectedController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\OtherClientDisconnected\OtherClientDisconnectedDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\QueryDeskChuPai\QueryDeskChuPaiController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\QueryDeskChuPai\QueryDeskChuPaiDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\QueryDeskFaDiPai\QueryDeskFaDiPaiController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\QueryDeskFaDiPai\QueryDeskFaDiPaiDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\QueryDeskFaPai\QueryDeskFaPaiController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\QueryDeskFaPai\QueryDeskFaPaiDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\QueryDeskJiaoDiZhu\QueryDeskJiaoDiZhuController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\QueryDeskJiaoDiZhu\QueryDeskJiaoDiZhuDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\QueryDeskJiaoDiZhuFinish\QueryDeskJiaoDiZhuFinishController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\QueryDeskJiaoDiZhuFinish\QueryDeskJiaoDiZhuFinishDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\QueryDeskPromptUserJiaoDiZhu\QueryDeskPromptUserJiaoDiZhuController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\QueryDeskPromptUserJiaoDiZhu\QueryDeskPromptUserJiaoDiZhuDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\QueryDeskUsers\QueryDeskUsersController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\QueryDeskUsers\QueryDeskUsersDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\RequestSender.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserChangeDesk\UserChangeDeskEncoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserCheckResumePlay\UserCheckResumePlayController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserCheckResumePlay\UserCheckResumePlayDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserCheckResumePlay\UserCheckResumePlayEncoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserEditProfile\UserEditProfileController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserEditProfile\UserEditProfileDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserEditProfile\UserEditProfileEncoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserEnterRoom\UserEnterRoomController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserEnterRoom\UserEnterRoomDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserEnterRoom\UserEnterRoomEncoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserGuestLogin\UserGuestLoginController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserGuestLogin\UserGuestLoginDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserGuestLogin\UserGuestLoginEncoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserLeaveDesk\UserLeaveDeskController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserLeaveDesk\UserLeaveDeskDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserLeaveDesk\UserLeaveDeskEncoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserLogin\UserLoginController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserLogin\UserLoginDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserLogin\UserLoginEncoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserPromptReady\UserPromptReadyController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserReady\UserReadyController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserReady\UserReadyDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserReady\UserReadyEncoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserRegister\UserRegisterController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserRegister\UserRegisterDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserRegister\UserRegisterEncoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserResumePlay\UserResumePlayEncoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserSitOnDesk\UserSitOnDeskController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserSitOnDesk\UserSitOnDeskDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\UserSitOnDesk\UserSitOnDeskEncoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\VersionUpdateCheck\VersionUpdateCheckController.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\VersionUpdateCheck\VersionUpdateCheckDecoder.cs" />
+    <Compile Include="Assets\Classes\NetworkRequest\VersionUpdateCheck\VersionUpdateCheckEncoder.cs" />
+    <Compile Include="Assets\Libs\miniJson\miniJson.cs" />
+    <Compile Include="Assets\Resources\prefab\alertView\ActionViewScript.cs" />
+    <Compile Include="Assets\Resources\prefab\alertView\AlertViewScript.cs" />
+    <Compile Include="Assets\Resources\prefab\animation\AnimationScript.cs" />
+    <Compile Include="Assets\Resources\prefab\button\ButtonScript.cs" />
+    <Compile Include="Assets\Resources\prefab\cardNumber\CardNumberScript.cs" />
+    <Compile Include="Assets\Resources\prefab\cardSprite\CardBgScript.cs" />
+    <Compile Include="Assets\Resources\prefab\cardSprite\CardButtonScript.cs" />
+    <Compile Include="Assets\Resources\prefab\cardSprite\CardSpriteScript.cs" />
+    <Compile Include="Assets\Resources\prefab\clockShake\ClockShakeScript.cs" />
+    <Compile Include="Assets\Resources\prefab\delayCaller\DelayCallerScript.cs" />
+    <Compile Include="Assets\Resources\prefab\loadingView\LoadingViewScript.cs" />
+    <Compile Include="Assets\Resources\prefab\settingView\SettingViewScript.cs" />
+    <Compile Include="Assets\Resources\prefab\sound\BgMusicPlayerScript.cs" />
+    <Compile Include="Assets\Resources\prefab\sound\SoundPlayerScript.cs" />
+    <Compile Include="Assets\Resources\prefab\userHead\UserHeadScript.cs" />
+    <Compile Include="Assets\Resources\prefab\winLose\LoseViewScript.cs" />
+    <Compile Include="Assets\Resources\prefab\winLose\WinViewScript.cs" />
+    <Compile Include="Assets\Resources\scripts\login\CallBackObject.cs" />
+    <Compile Include="Assets\Resources\scripts\login\LogicObject.cs" />
+    <Compile Include="Assets\Resources\scripts\login\NetworkHandlerObject.cs" />
+    <Compile Include="Assets\Resources\scripts\login\NetworkObject.cs" />
+    <Compile Include="Assets\Resources\scripts\login\UIInitObject.cs" />
+    <Compile Include="Assets\Resources\scripts\main\CallBackObject.cs" />
+    <Compile Include="Assets\Resources\scripts\main\CleanerObject.cs" />
+    <Compile Include="Assets\Resources\scripts\main\LogicObject.cs" />
+    <Compile Include="Assets\Resources\scripts\main\NetworkHandlerObject.cs" />
+    <Compile Include="Assets\Resources\scripts\main\NetworkObject.cs" />
+    <Compile Include="Assets\Resources\scripts\main\UIInitObject.cs" />
+    <Compile Include="Assets\Resources\scripts\profile\CallBackObject.cs" />
+    <Compile Include="Assets\Resources\scripts\profile\LogicObject.cs" />
+    <Compile Include="Assets\Resources\scripts\profile\NetworkHandlerObject.cs" />
+    <Compile Include="Assets\Resources\scripts\profile\NetworkObject.cs" />
+    <Compile Include="Assets\Resources\scripts\profile\UIInitObject.cs" />
+    <Compile Include="Assets\Resources\scripts\register\CallBackObject.cs" />
+    <Compile Include="Assets\Resources\scripts\register\LogicObject.cs" />
+    <Compile Include="Assets\Resources\scripts\register\NetworkHandlerObject.cs" />
+    <Compile Include="Assets\Resources\scripts\register\NetworkObject.cs" />
+    <Compile Include="Assets\Resources\scripts\register\UIInitObject.cs" />
+    <Compile Include="Assets\Resources\scripts\threePeoplePlay\ButtonEventsObject.cs" />
+    <Compile Include="Assets\Resources\scripts\threePeoplePlay\CallBackObject.cs" />
+    <Compile Include="Assets\Resources\scripts\threePeoplePlay\CleanerObject.cs" />
+    <Compile Include="Assets\Resources\scripts\threePeoplePlay\DelayUpdateUIObject.cs" />
+    <Compile Include="Assets\Resources\scripts\threePeoplePlay\LogicObject.cs" />
+    <Compile Include="Assets\Resources\scripts\threePeoplePlay\NetworkHandlerObject.cs" />
+    <Compile Include="Assets\Resources\scripts\threePeoplePlay\NetworkObject.cs" />
+    <Compile Include="Assets\Resources\scripts\threePeoplePlay\UIInitObject.cs" />
+    <Compile Include="Assets\Resources\scripts\threePeoplePlay\UpdateUIObject.cs" />
+    <Compile Include="Assets\Resources\scripts\transition\LevelLoadFade.cs" />
+    <Compile Include="Assets\Resources\scripts\transition\TransitionScene.cs" />
+    <Compile Include="Assets\Resources\scripts\welcome\CallBackObject.cs" />
+    <Compile Include="Assets\Resources\scripts\welcome\LogicObject.cs" />
+    <Compile Include="Assets\Resources\scripts\welcome\NetworkHandlerObject.cs" />
+    <Compile Include="Assets\Resources\scripts\welcome\NetworkObject.cs" />
+    <Compile Include="Assets\Resources\scripts\welcome\UIInitObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Libs\DOTween\DOTween.XML" />
+    <None Include="Assets\Libs\DOTween\DOTween43.xml" />
+    <None Include="Assets\Libs\DOTween\DOTween46.xml" />
+    <None Include="Assets\Libs\DOTween\DOTween50.xml" />
+    <None Include="Assets\Libs\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\Libs\DOTween\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2010\UnityVS.CSharp.targets" />
+</Project>
