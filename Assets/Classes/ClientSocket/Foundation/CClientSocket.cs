@@ -112,8 +112,6 @@ namespace ClientSocket.Foundation
 
         private void loopRead()
         {
-            PackageHeader packageHeader = new PackageHeader();
-
             int receivedLen = 0;
             _savedBufferSize = 0;
 
@@ -147,22 +145,19 @@ namespace ClientSocket.Foundation
 
                     Array.Copy(totalBytes, loopBufferPos, loopBuffer, 0, loopBufferLen);
 
-                    //小于包头长度
-                    if (loopBufferLen < Marshal.SizeOf(packageHeader)) break;
-                    if (loopBufferLen >= Marshal.SizeOf(packageHeader))
-                    {
-                        int headerDataLen = System.Net.IPAddress.NetworkToHostOrder(System.BitConverter.ToInt32(loopBuffer, 0));
+					if (loopBufferLen < PackageHeader.size() ) break;
 
-                        //大于包头，小于包长
-                        if (loopBufferLen > Marshal.SizeOf(packageHeader) && loopBufferLen < headerDataLen) break;
-
-                        //完整数据包readBufferWithSavedBytes + loopBufferPos，给上层的时候，需要去掉4字节包头长度
-                        Array.Clear(completeData, 0, completeData.Length);
-                        Array.Copy(totalBytes, loopBufferPos + 4, completeData, 0, headerDataLen);
-                        if (null != _callBack) _callBack.onReceiveData(completeData, headerDataLen);
-
-                        loopBufferPos += headerDataLen + 4;
-                    }
+					int headerDataLen = System.Net.IPAddress.NetworkToHostOrder(System.BitConverter.ToInt32(loopBuffer, 0));
+					
+					//大于包头，小于包长
+					if (loopBufferLen > PackageHeader.size() && loopBufferLen < headerDataLen) break;
+					
+					//完整数据包readBufferWithSavedBytes + loopBufferPos，给上层的时候，需要去掉4字节包头长度
+					Array.Clear(completeData, 0, completeData.Length);
+					Array.Copy(totalBytes, loopBufferPos + 4, completeData, 0, headerDataLen);
+					if (null != _callBack) _callBack.onReceiveData(completeData, headerDataLen);
+					
+					loopBufferPos += headerDataLen + 4;
                 }
 
                 Array.Clear(_savedBuffer, 0, _savedBufferSize);
