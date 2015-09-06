@@ -67,7 +67,7 @@ namespace ClientSocket.Foundation
         public void sendData(byte[] data)
         {
 			//包头内数据长度不包括包头长度
-			byte[] headerSizeBytes = new byte[4];
+			byte[] headerSizeBytes = new byte[PackageHeader.size()];
 			byte[] sendBuffer = new byte[BufferConst.SEND_BUFFER_CAP];
 
 			int dataSize = data.Length;
@@ -148,16 +148,16 @@ namespace ClientSocket.Foundation
 					if (loopBufferLen < PackageHeader.size() ) break;
 
 					int headerDataLen = System.Net.IPAddress.NetworkToHostOrder(System.BitConverter.ToInt32(loopBuffer, 0));
-					
+
 					//大于包头，小于包长
 					if (loopBufferLen > PackageHeader.size() && loopBufferLen < headerDataLen) break;
-					
+
 					//完整数据包readBufferWithSavedBytes + loopBufferPos，给上层的时候，需要去掉4字节包头长度
 					Array.Clear(completeData, 0, completeData.Length);
-					Array.Copy(totalBytes, loopBufferPos + 4, completeData, 0, headerDataLen);
+					Array.Copy(totalBytes, loopBufferPos + PackageHeader.size(), completeData, 0, headerDataLen);
 					if (null != _callBack) _callBack.onReceiveData(completeData, headerDataLen);
-					
-					loopBufferPos += headerDataLen + 4;
+
+					loopBufferPos += headerDataLen + PackageHeader.size();
                 }
 
                 Array.Clear(_savedBuffer, 0, _savedBufferSize);
