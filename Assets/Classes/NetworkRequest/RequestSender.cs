@@ -12,6 +12,7 @@ namespace NetworkRequest
             ModelManager.shareInstance().registerModelObjects();
             ModelManager.shareInstance().reset();
 
+            AsyncSocket.shareInstance().setPackageMaxSize(10000);
             AsyncSocket.shareInstance().setTimeout(10000);
             AsyncSocket.shareInstance().connect(ServerConst.SERVER_IP, ServerConst.SERVER_PORT);
         }

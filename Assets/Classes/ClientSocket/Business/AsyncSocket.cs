@@ -37,6 +37,11 @@ namespace ClientSocket.Business
             _socket.setDelegate(this);
         }
 
+        public void setPackageMaxSize(int packageMaxSize)
+        {
+            _socket.setPackageMaxSize(packageMaxSize);
+        }
+
         public void setTimeout(int timeout)
         {
             _timeout = timeout;

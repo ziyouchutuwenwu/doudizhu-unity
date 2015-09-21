@@ -15,6 +15,7 @@ namespace ClientSocket.Foundation
 
         private byte[] _savedBuffer = null;
         private int _savedBufferSize = 0;
+        private int _packageMaxSize = 0;
 
         public void init()
         {
@@ -25,7 +26,12 @@ namespace ClientSocket.Foundation
         public void setDelegate(IClientSocket callBack)
         {
             _callBack = callBack;
-         }
+        }
+
+        public void setPackageMaxSize(int packageMaxSize)
+        {
+            _packageMaxSize = packageMaxSize;
+        }
 
         //支持超时的connect
         public void connectWithTimeout(String ip, int port, int timeout)
@@ -149,8 +155,8 @@ namespace ClientSocket.Foundation
 
 					int headerDataLen = System.Net.IPAddress.NetworkToHostOrder(System.BitConverter.ToInt32(loopBuffer, 0));
 
-					//大于包头，小于包长
-					if (loopBufferLen > PackageHeader.size() && loopBufferLen < headerDataLen) break;
+					//不能太小，也不能太长
+          if ( loopBufferLen < headerDataLen || loopBufferLen > _packageMaxSize ) break;
 
 					//完整数据包readBufferWithSavedBytes + loopBufferPos，给上层的时候，需要去掉4字节包头长度
 					Array.Clear(completeData, 0, completeData.Length);
