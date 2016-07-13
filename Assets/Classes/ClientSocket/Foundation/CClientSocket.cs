@@ -79,7 +79,8 @@ namespace ClientSocket.Foundation
 			int dataSize = data.Length;
 			int totalSendSize = headerSizeBytes.Length + dataSize;
 
-			byte[] dataSizeBytes = BitConverter.GetBytes(System.Net.IPAddress.HostToNetworkOrder(dataSize));
+			byte[] dataSizeBytes = PackageHeader.setDataSizeBytes (dataSize);
+
 			Array.Copy(dataSizeBytes, 0, headerSizeBytes, 0, dataSizeBytes.Length);
 
 			Array.Copy(headerSizeBytes, 0, sendBuffer, 0, headerSizeBytes.Length);
@@ -152,13 +153,12 @@ namespace ClientSocket.Foundation
                     Array.Copy(totalBytes, loopBufferPos, loopBuffer, 0, loopBufferLen);
 
 					if (loopBufferLen < PackageHeader.size() ) break;
-
-					int headerDataLen = System.Net.IPAddress.NetworkToHostOrder(System.BitConverter.ToInt32(loopBuffer, 0));
+					int headerDataLen = PackageHeader.getHeaderDataLen(loopBuffer);
 
 					//不能太小，也不能太长
-          if ( loopBufferLen < headerDataLen || loopBufferLen > _packageMaxSize ) break;
+          			if ( loopBufferLen < headerDataLen || loopBufferLen > _packageMaxSize ) break;
 
-					//完整数据包readBufferWithSavedBytes + loopBufferPos，给上层的时候，需要去掉4字节包头长度
+					//完整数据包readBufferWithSavedBytes + loopBufferPos，给上层的时候，需要去掉包头长度
 					Array.Clear(completeData, 0, completeData.Length);
 					Array.Copy(totalBytes, loopBufferPos + PackageHeader.size(), completeData, 0, headerDataLen);
 					if (null != _callBack) _callBack.onReceiveData(completeData, headerDataLen);
